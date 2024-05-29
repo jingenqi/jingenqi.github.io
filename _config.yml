@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Enqi Jing 
-email: your-email@example.com
+email: jingenqi724@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hello, welcome to my personal website. Hope you can find something interesting here!
 
@@ -32,11 +32,13 @@ url: "https://jingenqi.github.io" # the base hostname & protocol for your site, 
 # twitter_username: jekyllrb
 github_username:  jingenqi
 
+markdown: kramdown
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
-
+  - jekyll-seo-tag
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -52,6 +54,7 @@ plugins:
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules/
+#   - vendor/
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/

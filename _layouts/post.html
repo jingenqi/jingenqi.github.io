@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<!-- <h1>Blog Posts</h1> -->
+<article class="post">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-content">
+        {{ content }}
+    </div>
+</article>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('.post-title').addEventListener('click', function() {
+            alert('You clicked the post title!');
+        });
+    });
+</script>
