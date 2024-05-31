@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | {{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="icon" href="{{ site.favicon | relative_url }}" type="image/jpeg">
+    <link rel="shortcut icon" href="{{ site.favicon | relative_url }}" type="image/jpeg">
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('main').style.backgroundColor = '#f0f0f0';
-            
         });
     </script>
 

@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+
 ---
 
 
@@ -16,9 +17,13 @@ layout: home
         img.alt = 'Personal Image';
 
         img.style.width = '570px';
-        img.style.height = '480px';
         img.style.borderRadius = '0'; 
         
         document.getElementById('image-container').appendChild(img);
     });
 </script>
+
+<head>
+  <link rel="icon" href="{{ site.favicon | relative_url }}" type="image/jpeg">
+  <link rel="shortcut icon" href="{{ site.favicon | relative_url }}" type="image/jpeg">
+</head>

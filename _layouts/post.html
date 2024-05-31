@@ -3,6 +3,16 @@ layout: default
 ---
 
 <!-- <h1>Blog Posts</h1> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="icon" href="{{ site.favicon | relative_url }}" type="image/jpeg">
+    <link rel="shortcut icon" href="{{ site.favicon | relative_url }}" type="image/jpeg">
+</head>
+<body>
 <article class="post">
     <h1 class="post-title">{{ page.title }}</h1>
     <div class="post-content">
@@ -17,3 +27,6 @@ layout: default
         });
     });
 </script>
+
+</body>
+</html>
