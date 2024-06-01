@@ -4,6 +4,7 @@ title: Profiles
 permalink: /profiles/
 ---
 
+
 <div style="text-align: center;">
     <img id="profile-pic" src="{{ '/images/profile_picture.JPG' | relative_url }}" alt="Profile Picture" style="width: 400px; border-radius: 100%;">
 </div>
