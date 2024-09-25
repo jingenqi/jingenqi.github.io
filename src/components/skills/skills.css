@@ -1,86 +1,118 @@
+/* Skills Container Layout */
 .skills__container {
-    grid-template-columns: repeat(2, 350px);
-    column-gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem; /* Use gap for both rows and columns */
     justify-content: center;
+    align-items: start; /* Ensure vertical alignment */
+    padding: 2rem 0;
 }
 
+/* Skills Content Card */
 .skills__content {
     background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 2rem 4rem ;
-    border-radius: 1.25rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Add soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 100%; 
 }
 
+.skills__content:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* More prominent shadow on hover */
+}
+
+/* Skills Title */
 .skills__title {
-    font-size: var(--normal-font-size);
+    font-size: 1.25rem; /* Increase font size for better emphasis */
     font-weight: var(--font-medium);
     text-align: center;
-    margin-bottom: var(--mb-1-5);
+    margin-bottom: 1.5rem;
+    color: var(--title-color); /* Make title color more prominent */
 }
 
+/* Skills Box */
 .skills__box {
-    display: flex;
-    justify-content: center;
-    column-gap: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem; /* Add consistent gap for both groups */
 }
 
-
+/* Skills Group */
 .skills__group {
     display: grid;
-    align-items: flex-start;
     row-gap: 1rem;
+    align-items: flex-start;
 }
 
+/* Skills Data Row */
 .skills__data {
     display: flex;
-    column-gap: 0.5rem;
+    align-items: center;
+    column-gap: 0.75rem;
+    padding: 0.25rem 0;
 }
 
+/* Skills Icon */
 .skills .bx-badge-check {
-    font-size: 1rem;
-    color: var(--title-color);
+    font-size: 1.25rem; /* Slightly increase icon size */
+    color: var(--primary-color); /* Make icon color prominent */
 }
 
+/* Skill Name */
 .skills__name {
-    font-size: var(--normal-font-size);
+    font-size: 1.125rem; /* Slightly increase font size */
     font-weight: var(--font-medium);
-    line-height: 18px;
+    color: var(--text-color);
+    line-height: 1.5;
 }
 
+/* Skill Level */
 .skills__level {
-    font-size: var(--tiny-font-size);
+    font-size: 0.875rem;
+    color: var(--text-color-light);
 }
 
+/* Breakpoints for Responsive Design */
 
-
-/*=============== BREAKPOINTS ===============*/
-/* For large devices */
+/* Large Devices */
 @media screen and (max-width: 992px) {
     .skills__container {
-        grid-template-columns: max-content;
-        row-gap: 2rem;
+        grid-template-columns: 1fr; /* Stack cards vertically */
+        gap: 2rem; /* Add gap between stacked cards */
     }
-  }
-  
-  
-  @media screen and (max-width: 576px) {
-    .skills__container {
-        grid-template-columns: 1fr;
-    }
+}
 
+/* Medium Devices */
+@media screen and (max-width: 768px) {
     .skills__content {
-        padding: 1.5rem;
+        padding: 1.5rem; /* Reduce padding on smaller screens */
     }
-  }
-  
-  /* For small devices */
-  @media screen and (max-width: 350px) {
-    .skills__box {
-        column-gap: 1.25rem;
-    }  
 
-    .skills__name {
-        font-size: var(--small-font-size);
+    .skills__box {
+        grid-template-columns: 1fr; /* Stack groups vertically */
     }
-  }
-  
+}
+
+/* Small Devices */
+@media screen and (max-width: 576px) {
+    .skills__content {
+        padding: 1.25rem; /* Further reduce padding */
+    }
+
+    .skills__box {
+        gap: 1.5rem; /* Decrease gap for smaller screens */
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .skills__name {
+        font-size: 1rem; /* Reduce font size for small devices */
+    }
+
+    .skills__box {
+        gap: 1.25rem;
+    }
+}

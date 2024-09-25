@@ -1,0 +1,33 @@
+/* ScrollUp Button */
+.scrollup {
+    position: fixed;
+    right: 2.5rem;
+    bottom: 3rem;
+    background-color: var(--title-color);
+    opacity: 0;
+    visibility: hidden;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    z-index: var(--z-tooltip);
+    transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
+    transform: translateY(100%); /* Initial hidden state */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.scrollup-icon {
+    font-size: 1.75rem; /* Slightly increased size for better visibility */
+    color: var(--container-color);
+}
+
+/* ScrollUp Button Hover State */
+.scrollup:hover {
+    background-color: var(--title-color-dark);
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Show Scroll */
+.show-scroll {
+    opacity: 0.8;
+    visibility: visible;
+    transform: translateY(0); /* Slide in from the bottom */
+}

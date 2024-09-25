@@ -1,0 +1,140 @@
+/* Footer Container and General Styling */
+.footer {
+    background-color: var(--container-color);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem; /* Ensure proper padding for smaller screens */
+}
+
+/* Footer Titles and Links */
+.footer__title,
+.footer__link {
+    color: var(--title-color); /* Ensure the color matches the design theme */
+    transition: color 0.3s ease;
+}
+
+.footer__title {
+    text-align: center;
+    margin-bottom: var(--mb-2);
+    font-size: 1.5rem; /* Enhance title font size for prominence */
+    font-weight: bold;
+}
+
+.footer__link {
+    text-decoration: none; /* Remove underline for a cleaner look */
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.footer__link:hover {
+    color: var(--primary-color); /* Make hover color more vibrant */
+    text-decoration: underline; /* Add underline on hover for clarity */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Footer Navigation List */
+.footer__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem; /* Increase gap between links */
+    margin-bottom: var(--mb-2);
+    list-style: none;
+    padding: 0;
+}
+
+.footer__list li {
+    margin: 0; /* Remove default margins */
+}
+
+/* Footer Social Links */
+.footer__social {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem; /* Increase gap for more spacing */
+    margin-top: 1.5rem;
+}
+
+.footer__social-link {
+    background-color: var(--title-color);
+    color: var(--container-color);
+    font-size: 1.25rem;
+    padding: 0.5rem; /* Increase padding for better touch target */
+    border-radius: 0.75rem; /* Slightly larger radius for smoother corners */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer__social-link:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px); /* Add slight lift on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Footer Copyright Text */
+.footer__copy {
+    display: block;
+    margin-top: 4rem;
+    color: var(--text-color-light);
+    text-align: center;
+    font-size: var(--small-font-size);
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    opacity: 0.85; /* Subtle opacity for a refined look */
+}
+
+.footer__copy:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 992px) {
+    .footer__social-link {
+        padding: 0.4rem; /* Adjust padding for medium screens */
+        border-radius: 0.5rem; /* Smaller radius for smaller devices */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__list {
+        flex-direction: column; /* Stack links vertically */
+        row-gap: 1rem; /* Add spacing between items */
+    }
+
+    .footer__social {
+        column-gap: 1rem; /* Reduce gap on smaller screens */
+    }
+
+    .footer__title {
+        font-size: 1.25rem; /* Slightly smaller title for compact spaces */
+    }
+
+    .footer__copy {
+        margin-top: 3rem;
+        font-size: var(--smaller-font-size);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer__container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .footer__social-link {
+        padding: 0.35rem;
+        font-size: 1rem;
+    }
+
+    .footer__copy {
+        margin-top: 2.5rem;
+    }
+}

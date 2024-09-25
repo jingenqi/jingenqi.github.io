@@ -1,35 +1,54 @@
+/* About Container */
 .about__container {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     column-gap: 4rem;
+    padding: 2rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* About Image */
 .about__img {
-    width: 390px;
+    width: 100%;
+    max-width: 390px;
     border-radius: 1.5rem;
     justify-self: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
+/* About Info Section */
 .about__info {
+    display: grid;
     grid-template-columns: repeat(3, 140px);
-    gap: 0.5rem;
+    gap: 1rem;
     margin-bottom: var(--mb-2);
 }
 
+/* About Boxes */
 .about__box {
     background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.75rem;
     text-align: center;
-    padding: 1rem 1.25rem;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
+.about__box:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* About Icons */
 .about__icon {
-    font-size: 1.5rem;
-    color: var(--title-color);
-    margin-bottom: var(--mb--0-5);
+    font-size: 1.75rem;
+    color: var(--primary-color); /* Make icon more prominent */
+    margin-bottom: var(--mb-0-5);
 }
 
+/* About Titles */
 .about__title {
     font-size: var(--small-font-size);
     font-weight: var(--font-medium);
@@ -37,60 +56,81 @@
 
 .about__subtitle {
     font-size: var(--tiny-font-size);
+    color: var(--text-color-light);
 }
 
+/* About Description */
 .about__description {
-    padding: 0.4rem;
+    padding: 1rem 0;
     margin-bottom: var(--mb-2-5);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 600px;
 }
 
+/* Button Styling */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    background-color: var(--title-color);
+    color: var(--container-color);
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    font-size: 1rem;
+}
 
+.button:hover {
+    background-color: var(--title-color);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Add hover shadow effect */
+}
 
-/*=============== BREAKPOINTS ===============*/
+.button__icon {
+    margin-left: 0.5rem;
+    font-size: 1.25rem;
+}
+
+/* Responsive Adjustments */
+
 /* For large devices */
 @media screen and (max-width: 992px) {
     .about__container {
         grid-template-columns: 1fr;
         row-gap: 2.5rem;
-    }
-
-    .about__img {
-        width: 220px;
-    }
-
-    .about__box {
-        padding: 0.75rem 0.5rem;
-    }
-
-    .about__data {
         text-align: center;
     }
 
-    .about__info {
-        justify-content: center;
+    .about__img {
+        max-width: 280px;
+        margin: 0 auto;
     }
 
     .about__description {
-        padding: 0 5rem;
-        margin-bottom: 2rem;
+        padding: 0 3rem;
     }
-  }
-  
-  /* For medium devices */
-  @media screen and (max-width: 576px) {
-    .about__info {
-        grid-template-columns: repeat(3, 1fr);
-    }
+}
 
-    .about__description {
-         padding: 0;
-    }
-  }
-  
-  /* For small devices */
-  @media screen and (max-width: 350px) {
+/* For medium devices */
+@media screen and (max-width: 576px) {
     .about__info {
         grid-template-columns: repeat(2, 1fr);
     }
-  }
-  
+
+    .about__description {
+        padding: 0 1.5rem;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .about__info {
+        grid-template-columns: 1fr;
+    }
+
+    .about__description {
+        padding: 0 1rem;
+    }
+}
