@@ -31,3 +31,8 @@
     visibility: visible;
     transform: translateY(0); /* Slide in from the bottom */
 }
+
+
+@media screen and (max-width:992px) {
+    
+}
