@@ -7,9 +7,9 @@ const Data = () => {
                 Enqi Jing
             
                 <svg
-                  width="36"
-                  height="36"
-                  viewBox="0 0 48 48"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 45 47"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   class="home__hand"
@@ -62,7 +62,14 @@ const Data = () => {
               I am a self-motivated problem solver with a passion for addressing complex challenges and driving
               innovation through collaboration.
             </p>
-        
+
+          {/*  
+            <h3 className="home__subtitle">Full Stack Engineer</h3>
+            <p className="home__description">
+              Proficient in Python and React workflow. Work well in Django and Flask framework 
+            </p>
+          */}
+         
             <a href="#contact" className="button button--flex">
                 Say Hello!
 

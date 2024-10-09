@@ -17,7 +17,15 @@ const About = () => {
                     <Info />
 
                     <p className="about__description">
-                        Master Student in Software Development and Predictive Modelling.
+                    I'm a software engineer with a passion for creating efficient, scalable systems that solve real-world problems. 
+                    With expertise in <span className="about__highlight">Python</span>,  
+                     <span className="about__highlight"> Java</span>, 
+                    <span className="about__highlight"> React</span>, 
+                    and <span className="about__highlight"> AWS</span>, 
+                    I specialize in developing robust back-end architectures and seamless
+                     front-end experiences. Whether it's building data-driven applications, 
+                     optimizing systems for performance, or deploying production-ready solutions, 
+                     I love turning ideas into tangible results.
                     </p>
 
                     <a download="" href={CV} className="button button--flex">
