@@ -57,12 +57,14 @@ const Data = () => {
                 </svg>
             </h1>
 
-            <h3 className="home__subtitle">Visual Designer</h3>
-            <p className="home__description">I'm Designer based in UK, 
-                and I'm very dedicated and hard-working</p>
+            <h3 className="home__subtitle">Software Engineer</h3>
+            <p className="home__description">
+              I am a self-motivated problem solver with a passion for addressing complex challenges and driving
+              innovation through collaboration.
+            </p>
         
             <a href="#contact" className="button button--flex">
-                say Hello
+                Say Hello!
 
                 <svg
                   class="button__icon"
