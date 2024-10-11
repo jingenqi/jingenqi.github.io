@@ -7,24 +7,41 @@ const Backend = () => {
 
             <div className="skills__box">
                 <div className="skills__group">
+
+                    {/* 1. */}
                     <div className="skills__data">
                         <i class="bx bx-badge-check"> </i>
-
                     <div>
                         <h3 className="skills__name">Python</h3>
                         <span className="skills__level">Advanced</span>
                     </div>
                     </div> 
 
+                    {/* 2. */}
                     <div className="skills__data">
                         <i class="bx bx-badge-check"> </i>
+                    <div>
+                        <h3 className="skills__name">Machine Learning</h3>
+                        <span className="skills__level">Advanced</span>
+                    </div>
+                    </div> 
 
+                    {/* 3. */}
+                    <div className="skills__data">
+                        <i class="bx bx-badge-check"> </i>
                     <div>
                         <h3 className="skills__name">PostgraSQL</h3>
                         <span className="skills__level">Intermediate</span>
                     </div>
                     </div> 
 
+                     
+
+                </div>
+
+
+                <div className="skills__group">
+                    {/* 4. */}
                     <div className="skills__data">
                         <i class="bx bx-badge-check"> </i>
 
@@ -34,10 +51,17 @@ const Backend = () => {
                     </div>
                     </div> 
 
-                </div>
+                    {/* 5. */}
+                    <div className="skills__data">
+                        <i class="bx bx-badge-check"> </i>
 
+                    <div>
+                        <h3 className="skills__name">Deep Learning</h3>
+                        <span className="skills__level">Intermediate</span>
+                    </div>
+                    </div> 
 
-                <div className="skills__group">
+                    {/* 6. */}
                     <div className="skills__data">
                         <i class="bx bx-badge-check"> </i>
 
@@ -47,23 +71,9 @@ const Backend = () => {
                     </div>
                     </div> 
 
-                    <div className="skills__data">
-                        <i class="bx bx-badge-check"> </i>
+ 
 
-                    <div>
-                        <h3 className="skills__name">Machine Learning</h3>
-                        <span className="skills__level">Advanced</span>
-                    </div>
-                    </div> 
-
-                    <div className="skills__data">
-                        <i class="bx bx-badge-check"> </i>
-
-                    <div>
-                        <h3 className="skills__name">Deep Learning</h3>
-                        <span className="skills__level">Intermediate</span>
-                    </div>
-                    </div> 
+                     
                     
                 </div>
             </div>
