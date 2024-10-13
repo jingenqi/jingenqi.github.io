@@ -8,14 +8,14 @@ const Info = () => {
             <div className="about__box">
             <i class="bx bx-award"></i>
 
-                <h3 className="about__title">Professional Experience</h3>
+                <h3 className="about__title">Working Experience</h3>
                 <span className="about__subtitle">Two Intern</span>
             </div>
 
             <div className="about__box">
             <FaPlay />
-                <h3 className="about__title">Completed</h3>
-                <span className="about__subtitle">10+ Projects</span>
+                <h3 className="about__title">Projects</h3>
+                <span className="about__subtitle">10+ Projects on ML & Web Application</span>
             </div>
 
             <div className="about__box">

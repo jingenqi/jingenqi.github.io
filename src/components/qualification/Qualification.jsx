@@ -20,7 +20,7 @@ const Qualification = () => {
   return (
     <section className="qualification section">
         <h2 className="section__title">Qualification</h2>
-        <span className="section__subtitle">My personal Journey</span>
+        <span className="section__subtitle">Personal Journey</span>
 
 
         <div className="qualification__container container">
@@ -48,6 +48,7 @@ const Qualification = () => {
             </div>
 
             <div className="qualification__sections">
+                {/* Education */} 
                 <div 
                 className={
                     toggleState === 1 
@@ -55,12 +56,14 @@ const Qualification = () => {
                     : "qualification__content"
                 }
                 >
+                    {/* Qualification 1*/} 
                     <div className="qualification__data">
                         <div>
-                            <h3 className="qualification__title">Qualification 1</h3>
-                            <span className="qualification__subtitle"> Work Experience 1 </span>
+                            <h3 className="qualification__title">Foundation Year</h3>
+                            <span className="qualification__subtitle"> University of Warwick</span>
+                            <span className="qualification__title"> Computer Science</span>
                             <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"></i> 2021 - Present
+                                <i className="uil uil-calendar-alt"></i> 2019 - 2020
                             </div>
                         </div>
 
@@ -70,41 +73,7 @@ const Qualification = () => {
                         </div>
                     </div>
 
-                    <div className="qualification__data">
-                        <div></div>
-                        
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-
-                        <div>
-                            <h3 className="qualification__title">Qualification 2</h3>
-                            <span className="qualification__subtitle"> Work Experience 2 </span>
-                            <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"></i> Time 2
-                            </div>
-                        </div>
-
-                        
-                    </div>
-
-
-                    <div className="qualification__data">
-                        <div>
-                            <h3 className="qualification__title">Qualification 3</h3>
-                            <span className="qualification__subtitle"> Work Experience 3 </span>
-                            <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"></i> Time 3
-                            </div>
-                        </div>
-
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                    </div>
-
+                    {/* Qualification 2 */} 
                     <div className="qualification__data">
                         <div></div>
                         
@@ -114,76 +83,118 @@ const Qualification = () => {
                         </div>
 
                         <div>
-                            <h3 className="qualification__title">Qualification 4</h3>
-                            <span className="qualification__subtitle"> Work Experience 4</span>
+                            <h3 className="qualification__title">Bachelor's (BSc)</h3>
+                            <span className="qualification__subtitle"> University of Warwick</span>
+                            <span className="qualification__title">Computer Science</span>
                             <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"></i> Time 4
+                                <i className="uil uil-calendar-alt"></i> 2020 - 2023
                             </div>
                         </div>
 
                         
                     </div>
+
+                    {/* Qualification 3 */} 
+                    <div className="qualification__data">
+                        <div>
+                            <h3 className="qualification__title">Master</h3>
+                            <span className="qualification__subtitle">University of Warwick </span>
+                            <span className="qualification__title"> Predictive Modelling and Scientific Computing</span>
+                            <div className="qualification__calender">
+                                <i className="uil uil-calendar-alt"></i> 2023 - 2024
+                            </div>
+                        </div>
+
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div  
-                    className={
-                        toggleState === 2 
-                        ? "qualification__content qualification__content-active"
-                        : "qualification__content"
-                    }
-                >
-                    <div className="qualification__data">
-                        <div>
-                            <h3 className="qualification__title">Qualification 1</h3>
-                            <span className="qualification__subtitle"> Work Experience 1 </span>
-                            <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"></i> 2021 - Present
-                            </div>
-                        </div>
 
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                    </div>
+                {/* Experience */} 
+                {/* Experience */} 
+<div  
+  className={
+    toggleState === 2 
+      ? "qualification__content qualification__content-active"
+      : "qualification__content"
+  }
+>
+  {/* Shangu Cyber Security Technology Co., Ltd */}
+  <div className="qualification__data">
+    <div>
+      <h3 className="qualification__title">Data Scientist, Intern</h3>
+      <span className="qualification__subtitle">Shangu Cyber Security Technology Co., Ltd</span>
+      <div className="qualification__calender">
+        <i className="uil uil-calendar-alt"></i> Jul. - Aug. 2023
+      </div>
+    </div>
 
-                    <div className="qualification__data">
-                        <div></div>
-                        
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
+    <div>
+      <span className="qualification__rounder"></span>
+      <span className="qualification__line"></span>
+    </div>
+  </div>
 
-                        <div>
-                            <h3 className="qualification__title">Qualification 2</h3>
-                            <span className="qualification__subtitle"> Work Experience 2 </span>
-                            <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"></i> Time 2
-                            </div>
-                        </div>
+  {/* Saint Laurent Consulting */}
+  <div className="qualification__data">
+    <div></div>
+    
+    <div>
+      <span className="qualification__rounder"></span>
+      <span className="qualification__line"></span>
+    </div>
 
-                        
-                    </div>
+    <div>
+      <h3 className="qualification__title">Business Intelligence Engineer, Intern</h3>
+      <span className="qualification__subtitle">Saint Laurent Consulting</span>
+      <div className="qualification__calender">
+        <i className="uil uil-calendar-alt"></i> Oct. 2022 - Jan. 2023
+      </div>
+    </div>
+  </div>
+
+  {/* Online Mentorship Management System */}
+  <div className="qualification__data">
+    <div>
+      <h3 className="qualification__title">Backend Software Engineer</h3>
+      <span className="qualification__subtitle">Online Mentorship Management System</span>
+      <div className="qualification__calender">
+        <i className="uil uil-calendar-alt"></i> Jan. - Mar. 2022
+      </div>
+    </div>
+
+    <div>
+      <span className="qualification__rounder"></span>
+      <span className="qualification__line"></span>
+    </div>
+  </div>
+
+  {/* E-commerce System Development */}
+  <div className="qualification__data">
+    <div></div>
+    
+    <div>
+      <span className="qualification__rounder"></span>
+      <span className="qualification__line"></span>
+    </div>
+
+    <div>
+      <h3 className="qualification__title">Full Stack Engineer</h3>
+      <span className="qualification__subtitle">E-commerce System Development</span>
+      <div className="qualification__calender">
+        <i className="uil uil-calendar-alt"></i> Mar. - Present
+      </div>
+    </div>
+  </div>
+
+</div>
 
 
-                    <div className="qualification__data">
-                        <div>
-                            <h3 className="qualification__title">Qualification 3</h3>
-                            <span className="qualification__subtitle"> Work Experience 3 </span>
-                            <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"></i> Time 3
-                            </div>
-                        </div>
 
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                    </div>
-
-                     
-                </div>
             </div>
         </div>
     </section>

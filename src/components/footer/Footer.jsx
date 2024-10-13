@@ -29,13 +29,7 @@ const Footer = () => {
             </ul>
 
             <div className="footer__social">
-            <a href="" className="home__social-icon" target="_blank">
-                <FaInstagram />
-            </a>
-
-            <a href="https://dribbble.com/krooop?onboarding=true&designer=true" className="home__social-icon" target="_blank">
-                <FaDribbble />
-            </a>
+             
 
             <a href="https://github.com/jingenqi" className="home__social-icon" target="_blank">
                 <FaGithub />
