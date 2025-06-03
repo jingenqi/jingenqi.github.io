@@ -132,11 +132,11 @@
     color: var(--text-color);
 }
 
-.contanct__form-area {
+.contact__form-area {
     height: 11rem;
 }
 
-.contanct__form-area textarea {
+.contact__form-area textarea {
     resize: none;
     width: 100%;
     height: 100%;
@@ -150,7 +150,7 @@
     transition: border 0.3s, box-shadow 0.3s;
 }
 
-.contanct__form-area textarea:focus {
+.contact__form-area textarea:focus {
     border-color: var(--primary-color);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }

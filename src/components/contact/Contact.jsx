@@ -93,7 +93,7 @@ const Contact = () => {
                         placeholder='Your email'/>
                     </div>
 
-                    <div className="contact__form-div contanct__form-area ">
+                    <div className="contact__form-div contact__form-area ">
                         <label className="contact__form-tag">Project</label>
                         <textarea name="project" cols="30" rows="10"
                         className='contact__form-input' placeholder='Write your project'>
@@ -103,7 +103,7 @@ const Contact = () => {
                     <button className="button button--flex">
                         Send Message
                         <svg
-                  class="button__icon"
+                  className="button__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
