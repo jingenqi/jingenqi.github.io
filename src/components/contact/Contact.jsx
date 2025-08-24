@@ -46,13 +46,13 @@ const Contact = () => {
                         <i className="bx bx-mail-send contact__card-icon"></i>
 
                         <h3 className="contact__card-title">Email</h3>
-                        <span className="contact__card-data">jingenqi724@gmail.com</span>
+                        <span className="contact__card-data">corporation@jingenqi.shop</span>
 
                         <a href="mailto:jingenqi724@gmail.com" className="contact__button">Write me {" "}<i className="bx bx-right-arrow-alt contact__button-icon" ></i>
                         </a>
                     </div>
 
-                    <div className="contact__card">
+                    {/* <div className="contact__card">
                         <i className="bx bxl-whatsapp contact__card-icon"></i>
 
                         <h3 className="contact__card-title">Whatsapp</h3>
@@ -60,7 +60,7 @@ const Contact = () => {
 
                         <a href="https://api.whatsapp.com/send?phone=07541135011&text=Hello, Nice to see you here! I am Jing, let's connect and exchange our ideas!" className="contact__button">+44 07541135011 <i className="bx bx-right-arrow-alt contact__button-icon" ></i>
                         </a>
-                    </div>
+                    </div> */}
 
                     <div className="contact__card">
                         <i className="bx bxl-linkedin contact__card-icon"></i>
