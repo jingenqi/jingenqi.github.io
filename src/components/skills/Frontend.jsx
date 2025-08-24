@@ -10,7 +10,7 @@ const Frontend = () => {
                 <div className="skills__group">
                     {/* 1. */}
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"> </i>
+                        <i className="bx bx-badge-check"> </i>
 
                     <div>
                         <h3 className="skills__name">HTML</h3>
@@ -20,7 +20,7 @@ const Frontend = () => {
                     
                     {/* 2. */}
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"> </i>
+                        <i className="bx bx-badge-check"> </i>
 
                     <div>
                         <h3 className="skills__name">CSS</h3>
@@ -30,7 +30,7 @@ const Frontend = () => {
 
                     {/* 3. */}
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"> </i>
+                        <i className="bx bx-badge-check"> </i>
                     <div>
                         <h3 className="skills__name">Git</h3>
                         <span className="skills__level">Intermediate</span>
@@ -43,7 +43,7 @@ const Frontend = () => {
                 {/* 4. */}
                 <div className="skills__group">
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"> </i>
+                        <i className="bx bx-badge-check"> </i>
                     <div>
                         <h3 className="skills__name">Bootstrap</h3>
                         <span className="skills__level">Basic</span>
@@ -52,7 +52,7 @@ const Frontend = () => {
 
                     {/* 5. */}
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"> </i>
+                        <i className="bx bx-badge-check"> </i>
                     <div>
                         <h3 className="skills__name">JavaScript</h3>
                         <span className="skills__level">Basic</span>
@@ -61,7 +61,7 @@ const Frontend = () => {
 
                     {/* 6. */}
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"> </i>
+                        <i className="bx bx-badge-check"> </i>
 
                     <div>
                         <h3 className="skills__name">React</h3>

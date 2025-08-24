@@ -83,14 +83,14 @@ const Contact = () => {
                         <label className="contact__form-tag">Name</label>
                         <input type="text" name="name"
                         className='contact__form-input'
-                        placeholder='Insert Your name'/>
+                        placeholder='Your name'/>
                     </div>
 
                     <div className="contact__form-div">
                         <label className="contact__form-tag">Mail</label>
                         <input type="email" name="email"
                         className='contact__form-input'
-                        placeholder='Insert Your email'/>
+                        placeholder='Your email'/>
                     </div>
 
                     <div className="contact__form-div contanct__form-area ">
@@ -103,7 +103,7 @@ const Contact = () => {
                     <button className="button button--flex">
                         Send Message
                         <svg
-                  class="button__icon"
+                  className="button__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"

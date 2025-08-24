@@ -10,7 +10,7 @@ const Backend = () => {
 
                     {/* 1. */}
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"> </i>
+                        <i className="bx bx-badge-check"> </i>
                     <div>
                         <h3 className="skills__name">Python</h3>
                         <span className="skills__level">Advanced</span>
@@ -19,7 +19,7 @@ const Backend = () => {
 
                     {/* 2. */}
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"> </i>
+                        <i className="bx bx-badge-check"> </i>
                     <div>
                         <h3 className="skills__name">Machine Learning</h3>
                         <span className="skills__level">Advanced</span>
@@ -28,7 +28,7 @@ const Backend = () => {
 
                     {/* 3. */}
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"> </i>
+                        <i className="bx bx-badge-check"> </i>
                     <div>
                         <h3 className="skills__name">PostgraSQL</h3>
                         <span className="skills__level">Intermediate</span>
@@ -43,7 +43,7 @@ const Backend = () => {
                 <div className="skills__group">
                     {/* 4. */}
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"> </i>
+                        <i className="bx bx-badge-check"> </i>
 
                     <div>
                         <h3 className="skills__name">Java</h3>
@@ -53,7 +53,7 @@ const Backend = () => {
 
                     {/* 5. */}
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"> </i>
+                        <i className="bx bx-badge-check"> </i>
 
                     <div>
                         <h3 className="skills__name">Deep Learning</h3>
@@ -63,7 +63,7 @@ const Backend = () => {
 
                     {/* 6. */}
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"> </i>
+                        <i className="bx bx-badge-check"> </i>
 
                     <div>
                         <h3 className="skills__name">SpringBoot</h3>
