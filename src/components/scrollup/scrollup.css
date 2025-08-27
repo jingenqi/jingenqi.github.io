@@ -12,6 +12,11 @@
     transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
     transform: translateY(100%); /* Initial hidden state */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .scrollup-icon {

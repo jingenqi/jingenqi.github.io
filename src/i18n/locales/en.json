@@ -1,0 +1,165 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "home": {
+    "name": "Enqi Jing",
+    "title": "Software Engineer",
+    "description": "I am a self-motivated problem solver with a passion for addressing complex challenges and driving innovation through collaboration.",
+    "sayHello": "Say Hello!"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Introduction",
+    "description": "I'm a software engineer with a passion for creating efficient, scalable systems that solve real-world problems. With expertise in Python, Java, React, and AWS, I specialize in developing robust back-end architectures and seamless front-end experiences. Whether it's building data-driven applications, optimizing systems for performance, or deploying production-ready solutions, I love turning ideas into tangible results.",
+    "downloadCV": "Download CV",
+    "experience": {
+      "title": "Working Experience",
+      "subtitle": "Two Intern"
+    },
+    "projects": {
+      "title": "Projects",
+      "subtitle": "10+ Projects on ML & Web Application"
+    },
+    "objective": {
+      "title": "Career Objective",
+      "subtitle": "Software Engineer"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Technical level",
+    "frontend": "Frontend Skills",
+    "backend": "Backend Skills",
+    "levels": {
+      "basic": "Basic",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "IT & Technology Solutions",
+    "viewMore": "View More",
+    "fullstack": {
+      "title": "Full-Stack Development",
+      "description": "End-to-end web applications using Django (backend), React (frontend), and PostgreSQL (database).",
+      "features": [
+        "RESTful API integration with Django REST Framework (DRF)",
+        "Backend architecture design with Django",
+        "Frontend development with React",
+        "Database design with PostgreSQL"
+      ]
+    },
+    "dataEngineering": {
+      "title": "Data Engineering & Automation",
+      "description": "Custom automated data pipelines and data visualization solutions using Python, PostgreSQL, and Tableau.",
+      "features": [
+        "Automated data scraping",
+        "Data pipelines with Python",
+        "Data visualization using Tableau",
+        "Database management with PostgreSQL"
+      ]
+    },
+    "cloud": {
+      "title": "Cloud Deployment & Infrastructure",
+      "description": "Scalable cloud solutions, system deployment, and server optimization using AWS, UWSGI, and Nginx.",
+      "features": [
+        "AWS cloud deployments",
+        "Server optimization using UWSGI & Nginx",
+        "Automated deployments with Ansible",
+        "Database backups and recovery"
+      ]
+    },
+    "ai": {
+      "title": "AI & ML Solutions",
+      "description": "Advanced artificial intelligence and machine learning solutions tailored to your business needs. Using Python and powerful ML libraries, I develop custom AI models and automation tools that help transform your data into actionable insights.",
+      "features": [
+        "Data preprocessing and feature engineering",
+        "Custom AI model development (e.g., predictive models, classification)",
+        "Implementation of machine learning algorithms using Python and TensorFlow",
+        "Automated model training and tuning with Python",
+        "Data visualization and analysis using Tableau",
+        "Model deployment and management on cloud platforms (e.g., AWS)"
+      ]
+    }
+  },
+  "qualification": {
+    "title": "Qualification",
+    "subtitle": "Personal Journey",
+    "education": "Education",
+    "experience": "Experience",
+    "educationData": [
+      {
+        "title": "Foundation Year",
+        "subtitle": "University of Warwick",
+        "field": "Computer Science",
+        "period": "2019 - 2020"
+      },
+      {
+        "title": "Bachelor's (BSc)",
+        "subtitle": "University of Warwick",
+        "field": "Computer Science",
+        "period": "2020 - 2023"
+      },
+      {
+        "title": "Master",
+        "subtitle": "University of Warwick",
+        "field": "Predictive Modelling and Scientific Computing",
+        "period": "2023 - 2024"
+      }
+    ],
+    "experienceData": [
+      {
+        "title": "Data Scientist, Intern",
+        "subtitle": "Shangu Cyber Security Technology Co., Ltd",
+        "period": "Jul. - Aug. 2023"
+      },
+      {
+        "title": "Business Intelligence Engineer, Intern",
+        "subtitle": "Saint Laurent Consulting",
+        "period": "Oct. 2022 - Jan. 2023"
+      },
+      {
+        "title": "Backend Software Engineer",
+        "subtitle": "Online Mentorship Management System",
+        "period": "Jan. - Mar. 2022"
+      },
+      {
+        "title": "Full Stack Engineer",
+        "subtitle": "E-commerce System Development",
+        "period": "Mar. - Present"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Contact Me",
+    "talkToMe": "Talk to me",
+    "writeIdea": "Write me your idea",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "writeMe": "Write me",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Mail",
+      "emailPlaceholder": "Your email",
+      "project": "Project",
+      "projectPlaceholder": "Write your project",
+      "sendMessage": "Send Message"
+    },
+    "modal": {
+      "success": "Your message has been sent successfully!",
+      "thankYou": "Thank you for getting in touch. I will respond to your message soon."
+    }
+  },
+  "footer": {
+    "rights": "Enqi Jing. All rights reserved"
+  }
+}

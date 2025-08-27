@@ -1,9 +1,11 @@
 import "./contact.css";
 import React, { useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
+import { useTranslation } from 'react-i18next';
 
 
 const Contact = () => {
+    const { t } = useTranslation();
     const form = useRef();
     const [modalVisible, setModalVisible] = useState(false); // 控制模态框显示的状态
 
@@ -35,8 +37,8 @@ const Contact = () => {
 
   return (
     <section className="contact section" id="contact">
-        <h2 className="section__title">Get in touch </h2>    
-        <span className="section__subtitle">Contact Me </span>
+        <h2 className="section__title">{t('contact.title')}</h2>
+        <span className="section__subtitle">{t('contact.subtitle')}</span>
 
         <div className="contact__container container grid">
             <div className="contact__content">

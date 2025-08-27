@@ -1,0 +1,90 @@
+.language-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--container-color);
+  border: 2px solid var(--text-color);
+  border-radius: 20px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+  outline: none;
+  min-width: 60px;
+  height: 30px;
+  justify-content: center;
+}
+
+.language-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow-color);
+  border-color: var(--title-color);
+}
+
+.language-toggle:focus {
+  box-shadow: 0 0 0 2px var(--accent-color);
+}
+
+.language-toggle:active {
+  transform: translateY(0);
+}
+
+.language-flag {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.language-code {
+  font-size: 0.75rem;
+  font-weight: var(--font-semi-bold);
+  letter-spacing: 0.5px;
+}
+
+/* 深色模式样式 */
+[data-theme="dark"] .language-toggle {
+  background: var(--container-color);
+  border-color: var(--text-color);
+  color: var(--title-color);
+}
+
+[data-theme="dark"] .language-toggle:hover {
+  border-color: var(--title-color);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .language-toggle {
+    padding: 0.4rem 0.6rem;
+    min-width: 50px;
+    height: 25px;
+    font-size: 0.7rem;
+  }
+  
+  .language-flag {
+    font-size: 0.9rem;
+  }
+  
+  .language-code {
+    font-size: 0.65rem;
+  }
+}
+
+/* 动画效果 */
+@keyframes languageSwitch {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.language-toggle:active {
+  animation: languageSwitch 0.2s ease-in-out;
+}

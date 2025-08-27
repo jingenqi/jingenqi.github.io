@@ -2,8 +2,12 @@ import React, { useState, useEffect, useRef } from "react";
 import './header.css';
 import { TfiAlignJustify } from "react-icons/tfi";
 import { TfiClose } from "react-icons/tfi";  // 添加关闭图标
+import { useTranslation } from 'react-i18next';
+import ThemeToggle from '../theme/ThemeToggle';
+import LanguageToggle from '../language/LanguageToggle';
 
 const Header = () => {
+    const { t } = useTranslation();
     const [isMenuOpen, setMenuOpen] = useState(false);
     const menuRef = useRef(null);  // 用于菜单的引用
 
@@ -41,7 +45,7 @@ const Header = () => {
                         {["Home", "About", "Skills", "Services", "Portfolio", "Contact"].map((section, index) => (
                             <li className="nav__item" key={index}>
                                 <a href={`#${section.toLowerCase()}`} className="nav__link">
-                                    <i className={`uil uil-${getIconName(section)} nav__icon`}></i> {section}
+                                    <i className={`uil uil-${getIconName(section)} nav__icon`}></i> {t(`nav.${section.toLowerCase()}`)}
                                 </a>
                             </li>
                         ))}
@@ -52,8 +56,12 @@ const Header = () => {
                     </i>
                 </div>
 
-                <div className="nav__toggle" onClick={toggleMenu}>
-                    <TfiAlignJustify />
+                <div className="nav__controls">
+                    <LanguageToggle />
+                    <ThemeToggle />
+                    <div className="nav__toggle" onClick={toggleMenu}>
+                        <TfiAlignJustify />
+                    </div>
                 </div>
             </nav>
         </header>

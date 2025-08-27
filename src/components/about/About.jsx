@@ -3,12 +3,15 @@ import "./about.css";
 import AboutImg from "../../assets/about.jpg";
 import CV from "../../assets/Enqi_Jing_Software_Engineer_Resume.pdf";
 import Info from "./Info";
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+    const { t } = useTranslation();
+
     return (
         <section className="about section" id="about">
-            <h2 className="section__title">About Me</h2>
-            <span className="section__subtitle">Introduction</span>
+            <h2 className="section__title">{t('about.title')}</h2>
+            <span className="section__subtitle">{t('about.subtitle')}</span>
 
             <div className="about__container container grid">
                 <img src={AboutImg} alt="About Me" className="about__img" />
@@ -17,19 +20,11 @@ const About = () => {
                     <Info />
 
                     <p className="about__description">
-                    I'm a software engineer with a passion for creating efficient, scalable systems that solve real-world problems. 
-                    With expertise in <span className="about__highlight">Python</span>,  
-                     <span className="about__highlight"> Java</span>, 
-                    <span className="about__highlight"> React</span>, 
-                    and <span className="about__highlight"> AWS</span>, 
-                    I specialize in developing robust back-end architectures and seamless
-                     front-end experiences. Whether it's building data-driven applications, 
-                     optimizing systems for performance, or deploying production-ready solutions, 
-                     I love turning ideas into tangible results.
+                    {t('about.description')}
                     </p>
 
                     <a download="" href={CV} className="button button--flex">
-                        Download CV
+                        {t('about.downloadCV')}
                         <svg
                             className="button__icon"
                             xmlns="http://www.w3.org/2000/svg"

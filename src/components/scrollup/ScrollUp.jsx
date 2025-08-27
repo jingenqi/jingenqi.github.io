@@ -20,10 +20,14 @@ const ScrollUp = () => {
         };
     }, []);
 
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     return (
-        <a href="#" className="scrollup">
+        <button onClick={scrollToTop} className="scrollup" aria-label="Scroll to top">
             <i className="uil uil-arrow-up scrollup-icon"></i>
-        </a>
+        </button>
     );
 };
 

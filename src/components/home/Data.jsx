@@ -1,10 +1,13 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 
 const Data = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="home__data">
             <h1 className="home__title">
-                Enqi Jing
+                {t('home.name')}
             
                 <svg
                   width="40"
@@ -57,10 +60,9 @@ const Data = () => {
                 </svg>
             </h1>
 
-            <h3 className="home__subtitle">Software Engineer</h3>
+            <h3 className="home__subtitle">{t('home.title')}</h3>
             <p className="home__description">
-              I am a self-motivated problem solver with a passion for addressing complex challenges and driving
-              innovation through collaboration.
+              {t('home.description')}
             </p>
 
           {/*  
@@ -71,7 +73,7 @@ const Data = () => {
           */}
          
             <a href="#contact" className="button button--flex">
-                Say Hello!
+                {t('home.sayHello')}
 
                 <svg
                     className="button__icon"

@@ -1,0 +1,165 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于",
+    "skills": "技能",
+    "services": "服务",
+    "portfolio": "作品集",
+    "contact": "联系"
+  },
+  "home": {
+    "name": "景恩琦",
+    "title": "软件工程师",
+    "description": "我是一名自我驱动的问题解决者，热衷于通过协作解决复杂挑战并推动创新。",
+    "sayHello": "打个招呼！"
+  },
+  "about": {
+    "title": "关于我",
+    "subtitle": "个人介绍",
+    "description": "我是一名软件工程师，热衷于创建高效、可扩展的系统来解决现实世界的问题。凭借在Python、Java、React和AWS方面的专业知识，我专注于开发强大的后端架构和无缝的前端体验。无论是构建数据驱动的应用程序、优化系统性能，还是部署生产就绪的解决方案，我都喜欢将想法转化为切实的成果。",
+    "downloadCV": "下载简历",
+    "experience": {
+      "title": "工作经验",
+      "subtitle": "两次实习"
+    },
+    "projects": {
+      "title": "项目经验",
+      "subtitle": "10+个机器学习和Web应用项目"
+    },
+    "objective": {
+      "title": "职业目标",
+      "subtitle": "软件工程师"
+    }
+  },
+  "skills": {
+    "title": "技能",
+    "subtitle": "技术水平",
+    "frontend": "前端技能",
+    "backend": "后端技能",
+    "levels": {
+      "basic": "基础",
+      "intermediate": "中级",
+      "advanced": "高级"
+    }
+  },
+  "services": {
+    "title": "服务",
+    "subtitle": "IT与技术解决方案",
+    "viewMore": "查看更多",
+    "fullstack": {
+      "title": "全栈开发",
+      "description": "使用Django（后端）、React（前端）和PostgreSQL（数据库）的端到端Web应用程序。",
+      "features": [
+        "使用Django REST Framework (DRF)的RESTful API集成",
+        "使用Django的后端架构设计",
+        "使用React的前端开发",
+        "使用PostgreSQL的数据库设计"
+      ]
+    },
+    "dataEngineering": {
+      "title": "数据工程与自动化",
+      "description": "使用Python、PostgreSQL和Tableau的定制自动化数据管道和数据可视化解决方案。",
+      "features": [
+        "自动化数据抓取",
+        "使用Python的数据管道",
+        "使用Tableau的数据可视化",
+        "使用PostgreSQL的数据库管理"
+      ]
+    },
+    "cloud": {
+      "title": "云部署与基础设施",
+      "description": "使用AWS、UWSGI和Nginx的可扩展云解决方案、系统部署和服务器优化。",
+      "features": [
+        "AWS云部署",
+        "使用UWSGI和Nginx的服务器优化",
+        "使用Ansible的自动化部署",
+        "数据库备份和恢复"
+      ]
+    },
+    "ai": {
+      "title": "AI与机器学习解决方案",
+      "description": "为您的业务需求量身定制的先进人工智能和机器学习解决方案。使用Python和强大的ML库，我开发定制的AI模型和自动化工具，帮助将您的数据转化为可操作的洞察。",
+      "features": [
+        "数据预处理和特征工程",
+        "定制AI模型开发（如预测模型、分类）",
+        "使用Python和TensorFlow实现机器学习算法",
+        "使用Python的自动化模型训练和调优",
+        "使用Tableau的数据可视化和分析",
+        "在云平台（如AWS）上的模型部署和管理"
+      ]
+    }
+  },
+  "qualification": {
+    "title": "学历资质",
+    "subtitle": "个人历程",
+    "education": "教育经历",
+    "experience": "工作经历",
+    "educationData": [
+      {
+        "title": "预科",
+        "subtitle": "华威大学",
+        "field": "计算机科学",
+        "period": "2019 - 2020"
+      },
+      {
+        "title": "学士学位",
+        "subtitle": "华威大学",
+        "field": "计算机科学",
+        "period": "2020 - 2023"
+      },
+      {
+        "title": "硕士学位",
+        "subtitle": "华威大学",
+        "field": "预测建模与科学计算",
+        "period": "2023 - 2024"
+      }
+    ],
+    "experienceData": [
+      {
+        "title": "数据科学家，实习生",
+        "subtitle": "山谷网络安全技术有限公司",
+        "period": "2023年7月 - 8月"
+      },
+      {
+        "title": "商业智能工程师，实习生",
+        "subtitle": "圣洛朗咨询",
+        "period": "2022年10月 - 2023年1月"
+      },
+      {
+        "title": "后端软件工程师",
+        "subtitle": "在线导师管理系统",
+        "period": "2022年1月 - 3月"
+      },
+      {
+        "title": "全栈工程师",
+        "subtitle": "电商系统开发",
+        "period": "3月 - 至今"
+      }
+    ]
+  },
+  "contact": {
+    "title": "联系我",
+    "subtitle": "取得联系",
+    "talkToMe": "与我交流",
+    "writeIdea": "写下您的想法",
+    "email": "邮箱",
+    "linkedin": "领英",
+    "writeMe": "联系我",
+    "form": {
+      "name": "姓名",
+      "namePlaceholder": "您的姓名",
+      "email": "邮箱",
+      "emailPlaceholder": "您的邮箱",
+      "project": "项目",
+      "projectPlaceholder": "描述您的项目",
+      "sendMessage": "发送消息"
+    },
+    "modal": {
+      "success": "您的消息已成功发送！",
+      "thankYou": "感谢您的联系。我会尽快回复您的消息。"
+    }
+  },
+  "footer": {
+    "rights": "景恩琦。保留所有权利"
+  }
+}

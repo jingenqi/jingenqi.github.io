@@ -6,9 +6,10 @@
     justify-content: center;
     align-items: start;
     padding: 2rem 0;
-    background: linear-gradient(135deg, #f0f0f0, #fafafa); /* Subtle background gradient for a modern look */
+    background-color: var(--body-color); /* Use theme-aware background */
     border-radius: 1rem; /* Add some border radius for smoother container */
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Add soft shadow for depth */
+    box-shadow: 0 6px 18px var(--shadow-color); /* Use theme-aware shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Skills Content Card */
@@ -17,7 +18,7 @@
     border: none; /* Remove borders for a cleaner look */
     padding: 2rem;
     border-radius: 1.5rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* More shadow depth for commercial feel */
+    box-shadow: 0 4px 20px var(--shadow-color); /* Use theme-aware shadow */
     transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
     min-height: 100%;
     position: relative; /* For advanced hover effects */
@@ -26,8 +27,8 @@
 
 .skills__content:hover {
     transform: translateY(-10px); /* Increase the hover lift */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Add more prominent shadow */
-    background-color: var(--primary-color-light); /* Change background on hover for interactivity */
+    box-shadow: 0 10px 30px var(--shadow-color); /* Use theme-aware shadow */
+    background-color: var(--container-color); /* Keep consistent background */
 }
 
 .skills__content::before {
@@ -37,14 +38,16 @@
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+    background: radial-gradient(circle, var(--text-color-light), transparent);
     transition: 0.7s;
+    opacity: 0.1;
 }
 
 .skills__content:hover::before {
     top: -30%;
     left: -30%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent); /* Gentle light ripple effect */
+    background: radial-gradient(circle, var(--text-color-light), transparent);
+    opacity: 0.2;
 }
 
 /* Skills Title */

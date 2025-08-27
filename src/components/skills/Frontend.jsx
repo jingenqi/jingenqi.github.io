@@ -1,10 +1,13 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 
 const Frontend = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="skills__content">
-            <h3 className="skills__title">Frontend Skills</h3>
+            <h3 className="skills__title">{t('skills.frontend')}</h3>
 
             <div className="skills__box">
                 <div className="skills__group">
@@ -14,7 +17,7 @@ const Frontend = () => {
 
                     <div>
                         <h3 className="skills__name">HTML</h3>
-                        <span className="skills__level">Intermediate</span>
+                        <span className="skills__level">{t('skills.levels.intermediate')}</span>
                     </div>
                     </div> 
                     

@@ -1,28 +1,30 @@
 import React from "react";
-import { faPaperPlane, FaPlay} from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 
 const Info = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="about__info grid">
             <div className="about__box">
              <i className="bx bx-award"></i>
 
-                <h3 className="about__title">Working Experience</h3>
-                <span className="about__subtitle">Two Intern</span>
+                <h3 className="about__title">{t('about.experience.title')}</h3>
+                <span className="about__subtitle">{t('about.experience.subtitle')}</span>
             </div>
 
             <div className="about__box">
-            <FaPlay />
-                <h3 className="about__title">Projects</h3>
-                <span className="about__subtitle">10+ Projects on ML & Web Application</span>
+             <i className='bx bx-briefcase-alt'></i>
+                <h3 className="about__title">{t('about.projects.title')}</h3>
+                <span className="about__subtitle">{t('about.projects.subtitle')}</span>
             </div>
 
             <div className="about__box">
              <i className='bx bx-calendar'></i>
-                <h3 className="about__title">Carrer Objective</h3>
-                <span className="about__subtitle">Software Engineer </span>
-                
+                <h3 className="about__title">{t('about.objective.title')}</h3>
+                <span className="about__subtitle">{t('about.objective.subtitle')}</span>
+
             </div>
 
 

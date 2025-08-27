@@ -11,11 +11,11 @@ const Qualification = () => {
     }
 
     // Function to close the modal when clicking outside the modal content
-    const closeModalOnOutsideClick = (e) => {
-        if (e.target.classList.contains('services__modal')) {
-            setToggleState(0);
-        }
-    };
+    // const closeModalOnOutsideClick = (e) => {
+    //     if (e.target.classList.contains('services__modal')) {
+    //         setToggleState(0);
+    //     }
+    // };
 
   return (
     <section className="qualification section">

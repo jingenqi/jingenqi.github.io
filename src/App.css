@@ -9,11 +9,17 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 0;
   --sat: 0%;
+
+  /* Light theme colors */
   --title-color: hsl(var(--hue), var(--sat), 20%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
+  --text-color-light: hsl(var(--hue), var(--sat), 70%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
+  --border-color: hsl(var(--hue), var(--sat), 90%);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --accent-color: #007bff;
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -50,6 +56,19 @@
   --z-modal: 1000;
 }
 
+/* Dark theme colors */
+[data-theme="dark"] {
+  --title-color: hsl(var(--hue), var(--sat), 95%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 100%);
+  --text-color: hsl(var(--hue), var(--sat), 75%);
+  --text-color-light: hsl(var(--hue), var(--sat), 40%);
+  --body-color: hsl(var(--hue), var(--sat), 8%);
+  --container-color: hsl(var(--hue), var(--sat), 12%);
+  --border-color: hsl(var(--hue), var(--sat), 20%);
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --accent-color: #4dabf7;
+}
+
 /* Responsive typography */
 @media screen and (max-width: 992px) {
   :root {
@@ -80,6 +99,7 @@ input,
 textarea {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body {
@@ -92,6 +112,7 @@ h2,
 h3 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
+  transition: color 0.3s ease;
 }
 
 ul {
@@ -100,17 +121,37 @@ ul {
 
 a {
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 button {
   cursor: pointer;
   border: none;
   outline: none;
+  transition: all 0.3s ease;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* 深色模式下的滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--body-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--title-color);
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -144,6 +185,12 @@ img {
 .grid {
   display: grid;
   gap: 1.5rem;
+}
+
+.main {
+  background-color: var(--body-color);
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
 }
 
 /*=============== BUTTONS ===============*/
