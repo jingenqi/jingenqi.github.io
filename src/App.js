@@ -1,35 +1,31 @@
-import './App.css';
-import { ThemeProvider } from './contexts/ThemeContext';
-import Header from './components/header/Header';
-import Home from './components/home/home';
-import About from './components/about/About';
-import Skills from './components/skills/Skills';
-import Services from './components/services/Services';
-import Qualification from './components/qualification/Qualification';
-// import Testimonials from './components/testimonials/Testimonials'
-import Contact from './components/contact/Contact';
-import Footer from './components/footer/Footer';
-import ScrollUp from './components/scrollup/ScrollUp';
+// import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import './styles/globals.css';
+import MainLayout from './components/common/Layout/MainLayout';
+import HomePage from './pages/HomePage';
+import SkillsPage from './pages/SkillsPage';
+import BlogPage from './pages/BlogPage';
+import ProjectsPage from './pages/ProjectsPage';
+import NotesPage from './pages/NotesPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
-    <ThemeProvider>
-      <Header />
-
-      <main className='main'>
-        <Home />
-        <About/>
-        <Skills/>
-        <Services/>
-        <Qualification/>
-        {/* <Testimonials/> */}
-        <Contact/>
-
-      </main>
-
-        <Footer />
-        <ScrollUp />
-    </ThemeProvider>
+    <Router>
+      <MainLayout>
+        <AnimatePresence mode="wait">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/skills" element={<SkillsPage />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/notes" element={<NotesPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </AnimatePresence>
+      </MainLayout>
+    </Router>
   );
 }
 
