@@ -1,0 +1,38 @@
+.eyebrow {
+  margin: 0 0 var(--space-2);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-ui);
+  font-weight: 600;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: calc(var(--z-header) + 10);
+  inset: 0 auto auto var(--space-2);
+  padding: 0.75rem 1rem;
+  transform: translateY(-120%);
+  border-radius: 0 0 var(--radius-small) var(--radius-small);
+  color: #fff;
+  background: var(--color-accent);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.content-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 700px;
+}

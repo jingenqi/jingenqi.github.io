@@ -1,0 +1,107 @@
+:root {
+  color-scheme: light;
+
+  /* Fog white, mineral surfaces, and graphite */
+  --color-background: #f4f6f5;
+  --color-background-elevated: rgba(244, 246, 245, 0.9);
+  --color-surface: #e9edeb;
+  --color-surface-raised: #fbfcfb;
+  --color-surface-strong: #dce3e0;
+  --color-text: #20282c;
+  --color-text-secondary: #455158;
+  --color-text-muted: #657177;
+  --color-border: rgba(32, 40, 44, 0.14);
+  --color-border-strong: rgba(32, 40, 44, 0.25);
+  --color-accent: #416a73;
+  --color-accent-hover: #315861;
+  --color-accent-soft: rgba(65, 106, 115, 0.12);
+  --color-accent-contrast: #ffffff;
+  --color-success: #168243;
+  --color-warning: #9a6700;
+  --color-danger: #c9342f;
+  --color-visual-grid: rgba(32, 40, 44, 0.1);
+  --color-visual-line: #416a73;
+  --color-visual-line-secondary: #737f84;
+
+  /* System typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+    "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --font-size-section-title: 3rem;
+  --font-size-case-title: 2rem;
+  --font-size-body-large: 1.3125rem;
+  --font-size-body: 1.0625rem;
+  --font-size-ui: 0.875rem;
+  --font-size-caption: 0.8125rem;
+  --line-height-heading: 1.15;
+  --line-height-body: 1.6;
+
+  /* 8px spacing system */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 4rem;
+  --space-7: 6rem;
+  --space-8: 8rem;
+
+  --content-width: 75rem;
+  --text-width: 45rem;
+  --page-gutter: 2rem;
+  --header-height: 3rem;
+  --radius-small: 0.375rem;
+  --radius-medium: 0.5rem;
+  --radius-large: 0.875rem;
+  --shadow-small: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-subtle: 0 14px 38px rgba(28, 39, 44, 0.07);
+  --shadow-medium: 0 18px 50px rgba(28, 39, 44, 0.09);
+  --focus-ring: 0 0 0 3px rgba(65, 106, 115, 0.32);
+  --duration-fast: 180ms;
+  --duration-base: 320ms;
+  --duration-slow: 480ms;
+  --ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+  --z-header: 100;
+  --z-menu: 90;
+}
+
+[data-theme="dark"],
+.dark {
+  color-scheme: dark;
+  --color-background: #262c2e;
+  --color-background-elevated: rgba(38, 44, 46, 0.9);
+  --color-surface: #30373a;
+  --color-surface-raised: #373f42;
+  --color-surface-strong: #414a4d;
+  --color-text: #eef1f2;
+  --color-text-secondary: #cbd2d4;
+  --color-text-muted: #9da8ac;
+  --color-border: rgba(238, 241, 242, 0.14);
+  --color-border-strong: rgba(238, 241, 242, 0.25);
+  --color-accent: #90afb5;
+  --color-accent-hover: #aac3c7;
+  --color-accent-soft: rgba(144, 175, 181, 0.16);
+  --color-accent-contrast: #172327;
+  --color-success: #3cce74;
+  --color-warning: #f0b429;
+  --color-danger: #ff6961;
+  --color-visual-grid: rgba(238, 241, 242, 0.12);
+  --color-visual-line: #90afb5;
+  --color-visual-line-secondary: #9da8ac;
+  --shadow-small: 0 1px 2px rgba(10, 12, 10, 0.3);
+  --shadow-subtle: 0 14px 38px rgba(10, 12, 10, 0.18);
+  --shadow-medium: 0 18px 50px rgba(10, 12, 10, 0.25);
+  --focus-ring: 0 0 0 3px rgba(144, 175, 181, 0.36);
+}
+
+@media (max-width: 48rem) {
+  :root {
+    --font-size-section-title: 2rem;
+    --font-size-case-title: 1.625rem;
+    --font-size-body-large: 1.125rem;
+    --font-size-body: 1rem;
+    --page-gutter: 1.25rem;
+    --space-7: 4rem;
+    --space-8: 6rem;
+  }
+}

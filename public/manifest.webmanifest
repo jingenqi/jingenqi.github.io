@@ -1,0 +1,21 @@
+{
+  "name": "Enqi Jing — Risk Intelligence Engineer and Researcher",
+  "short_name": "Enqi Jing",
+  "description": "Engineering intelligence for complex systems.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "lang": "en-GB",
+  "theme_color": "#eef1f2",
+  "background_color": "#eef1f2",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

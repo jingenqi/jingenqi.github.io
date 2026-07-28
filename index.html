@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f4f6f5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#262c2e" media="(prefers-color-scheme: dark)" />
+
+    <title>Enqi Jing - Risk Intelligence Engineer and Researcher</title>
+    <meta
+      name="description"
+      content="Enqi Jing is a software engineer and researcher working across distributed systems, machine learning and risk intelligence."
+    />
+    <meta name="author" content="Enqi Jing" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://jingenqi.tech/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Enqi Jing" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:title" content="Enqi Jing - Risk Intelligence Engineer and Researcher" />
+    <meta
+      property="og:description"
+      content="A personal website for Enqi Jing, a software engineer and researcher working across distributed systems, machine learning and risk intelligence."
+    />
+    <meta property="og:url" content="https://jingenqi.tech/" />
+    <meta property="og:image" content="https://jingenqi.tech/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Enqi Jing - Software engineer and researcher" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Enqi Jing - Risk Intelligence Engineer and Researcher" />
+    <meta
+      name="twitter:description"
+      content="A personal website for Enqi Jing, a software engineer and researcher working across distributed systems, machine learning and risk intelligence."
+    />
+    <meta name="twitter:image" content="https://jingenqi.tech/og-image.png" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <script>
+      (() => {
+        const redirect = window.location.search;
+        if (redirect.startsWith('?/')) {
+          const restoredPath = redirect
+            .slice(1)
+            .split('&')
+            .map((segment) => segment.replace(/~and~/g, '&'))
+            .join('?');
+          window.history.replaceState(null, '', restoredPath + window.location.hash);
+        }
+
+        let savedTheme;
+        try {
+          savedTheme = window.localStorage.getItem('enqi-theme-v1');
+        } catch {
+          savedTheme = null;
+        }
+        const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme =
+          savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : systemTheme;
+      })();
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Enqi Jing",
+        "url": "https://jingenqi.tech/",
+        "jobTitle": "Risk Intelligence Engineer and Researcher",
+        "description": "Engineer and researcher working across machine learning, cyber-risk analysis and distributed systems.",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Warwick"
+        },
+        "sameAs": [
+          "https://github.com/jingenqi",
+          "https://www.linkedin.com/in/enqi-jing-b36600157/"
+        ],
+        "knowsAbout": [
+          "Machine learning",
+          "Risk intelligence",
+          "Cyber security",
+          "Distributed systems",
+          "Predictive modelling"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>This portfolio requires JavaScript to provide its full interactive experience.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
