@@ -17,7 +17,7 @@ export default function WorkPage() {
 
       <div className="work-index">
         {projects.map((project) => (
-          <article className="work-card content-auto" key={project.slug}>
+          <article className="work-card" key={project.slug}>
             <div className="work-card__visual">
               <ProjectVisual type={project.visual.type} caption={project.visual.cues[0]} />
             </div>

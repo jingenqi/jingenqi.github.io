@@ -54,7 +54,7 @@ export default function CaseStudyPage() {
         </dl>
       </header>
 
-      <div className="case-body content-auto">
+      <div className="case-body">
         <section className="case-section">
           <h2 className="case-section__title">Context</h2>
           <div className="case-section__content">

@@ -41,6 +41,9 @@ export default function HomePage() {
             My interests are risk, reliability, anomalous behaviour, and decision support in
             connected systems.
           </p>
+        </div>
+
+        <div className="identity-hero__field">
           <IdentityField />
         </div>
       </section>

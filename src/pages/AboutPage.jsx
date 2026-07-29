@@ -39,7 +39,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="experience-section content-auto">
+      <section className="experience-section">
         <header className="section-heading">
           <h2>Experience</h2>
         </header>
@@ -62,7 +62,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="page-content content-auto">
+      <section className="page-content">
         <header className="section-heading">
           <h2>Education</h2>
         </header>
@@ -82,7 +82,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="page-content content-auto">
+      <section className="page-content">
         <header className="section-heading">
           <h2>Technical skills</h2>
         </header>
